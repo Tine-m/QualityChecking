@@ -1,6 +1,6 @@
-# 🧪 Unit Test & JUnit – Cheatsheet (1. semester)
+# Unit Test & JUnit – den korte version
 
-## 🎯 Formål med unit tests
+## Formål med unit tests
 Unit tests bruges til at:
 - kontrollere at **kode virker som forventet**
 - finde fejl **hurtigt**
@@ -8,6 +8,8 @@ Unit tests bruges til at:
 - give klar feedback: *virker / virker ikke*
 
 👉 En unit test tester **én lille del af programmet** (typisk én metode).
+
+![3 teknikker](approaches.png)
 
 ---
 
@@ -123,7 +125,7 @@ Slår en test fra midlertidigt.
 ```java
 @Disabled("Enable in Story S3")
 @Test
-void futureFeatureTest() {
+void XXXTest() {
 }
 ```
 
@@ -179,26 +181,3 @@ void feed_neverMakesHungerNegative() { ... }
 - Debug én metode ad gangen
 
 👉 Debug aldrig hele programmet, hvis en test kan isolere fejlen.
-
----
-
-## 🚨 Typiske begynderfejl (og hvad man gør i stedet)
-
-### ❌ “Jeg tester det hele i én test”
-✔ Del op i flere små tests
-
----
-
-### ❌ “Jeg tester Scanner og menu”
-✔ Test kun klasser med logik (`Pet`, `BankAccount` osv.)
-
----
-
-### ❌ “Jeg kommenterer testen ud”
-✔ Brug `@Disabled("forklaring")`
-
----
-
-### ❌ “Jeg ignorerer røde tests”
-✔ Rød test = stop og fix  
-✔ Grøn test =
