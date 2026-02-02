@@ -9,6 +9,8 @@ Unit tests bruges til at:
 
 👉 En unit test tester **én lille del af programmet** (typisk én metode).
 
+![3 teknikker](approaches.png)
+
 ---
 
 ## 🧰 Hvad er JUnit?
