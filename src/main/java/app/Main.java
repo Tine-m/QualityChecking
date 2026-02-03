@@ -9,9 +9,9 @@ public class Main {
         company.runStreamExercise();
 
         // Kør NY firma kode
-        CompanyRefactored companyNew = new CompanyRefactored();
+    /*    CompanyRefactored companyNew = new CompanyRefactored();
         companyNew.welcomeGreeting();
         List<Employee> result = companyNew.getAllEmployees();
-        result.forEach(employee -> System.out.println(employee));
+        result.forEach(employee -> System.out.println(employee));*/
     }
 }
