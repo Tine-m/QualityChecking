@@ -13,7 +13,7 @@ Unit tests bruges til at:
 
 ---
 
-## 🧰 Hvad er JUnit?
+## Hvad er JUnit?
 **JUnit** er et Java-bibliotek til at:
 - skrive tests i Java
 - køre dem automatisk
@@ -54,7 +54,7 @@ Skal defineres i `pom.xml`:
 
 ---
 
-## 🧠 AAA-tilgangen (Arrange – Act – Assert)
+## AAA-tilgangen (Arrange – Act – Assert)
 De fleste tests følger dette mønster:
 
 ```java
@@ -133,7 +133,7 @@ void XXXTest() {
 
 ---
 
-## 🧠 Gode principper (meget vigtige)
+## Gode principper
 
 ### ✔ Én test = én ting
 ❌ Dårligt:
