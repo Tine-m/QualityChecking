@@ -54,33 +54,6 @@ public class CompanyRefactored {
     }
 
     public List<Employee> findHighestPaidEmployee () { // Højeste månedsløn
-        /*Employee bigMoney = employees.stream()
-                .max(Comparator.comparingInt( e -> e.getSalary()))
-                .get();
-
-        double limit = bigMoney.getSalary();
-        List<Employee> highRollers = employees.stream()
-                .filter(e -> e.getSalary() > limit)
-                .toList();
-
-//        return highRollers;
-
-
-      */
-        /*int highestSalary = employees.stream()
-                .mapToInt(Employee::getSalary)
-                .max()
-                .orElse(0);
-
-                return employees.stream()
-                        .filter(e -> e.getSalary() == highestSalary)
-                        .toList();
-                highestSalary.forEach(c -> System.out::print(c.getName() + ": " + c.getSalary()));
-
-
-
-        );*/
-        
         Employee highestPaid = employees.stream().max(Comparator.comparing(Employee::getSalary)).get();
         int salary = highestPaid.getSalary();
         List<Employee> bigMoneyPpl = employees.stream().filter(e -> e.getSalary() == salary).toList();
